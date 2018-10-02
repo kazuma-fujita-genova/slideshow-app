@@ -12,6 +12,7 @@
 		A48088DF2163156B0030E9A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48088DD2163156B0030E9A5 /* Main.storyboard */; };
 		A48088E12163156C0030E9A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48088E02163156C0030E9A5 /* Assets.xcassets */; };
 		A48088E42163156C0030E9A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48088E22163156C0030E9A5 /* LaunchScreen.storyboard */; };
+		A48088EC2163191B0030E9A5 /* EnlargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48088EB2163191B0030E9A5 /* EnlargeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A48088E02163156C0030E9A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A48088E32163156C0030E9A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A48088E52163156C0030E9A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A48088EB2163191B0030E9A5 /* EnlargeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlargeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				A48088D92163156B0030E9A5 /* AppDelegate.swift */,
 				A48088DB2163156B0030E9A5 /* ViewController.swift */,
 				A48088DD2163156B0030E9A5 /* Main.storyboard */,
+				A48088EB2163191B0030E9A5 /* EnlargeViewController.swift */,
 				A48088E02163156C0030E9A5 /* Assets.xcassets */,
 				A48088E22163156C0030E9A5 /* LaunchScreen.storyboard */,
 				A48088E52163156C0030E9A5 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48088EC2163191B0030E9A5 /* EnlargeViewController.swift in Sources */,
 				A48088DC2163156B0030E9A5 /* ViewController.swift in Sources */,
 				A48088DA2163156B0030E9A5 /* AppDelegate.swift in Sources */,
 			);
