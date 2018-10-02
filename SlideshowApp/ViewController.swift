@@ -20,6 +20,10 @@ class ViewController: UIViewController {
     
     let timer_interval: Double = 2
     
+    let play_character: String = "▶"
+    
+    let stop_character: String = "■"
+    
     var timer: Timer!
     
     var returnImage:UIImage!
@@ -41,7 +45,7 @@ class ViewController: UIViewController {
     
     @IBAction func playImage(_ sender: Any) {
         if self.playImageButton.isSelected {
-            self.playImageButton.setTitle("▶", for: UIControlState())
+            self.playImageButton.setTitle(self.play_character, for: UIControlState())
             if self.timer != nil {
                 self.timer.invalidate()
                 self.timer = nil
@@ -51,7 +55,7 @@ class ViewController: UIViewController {
             self.prevImageButton.isEnabled = true
         }
         else {
-            self.playImageButton.setTitle("■", for: UIControlState())
+            self.playImageButton.setTitle(self.stop_character, for: UIControlState())
             if self.timer == nil {
                 self.timer = Timer.scheduledTimer(timeInterval: self.timer_interval, target: self, selector: #selector(nextImageSelector(_:)), userInfo: nil, repeats: true)
             }
