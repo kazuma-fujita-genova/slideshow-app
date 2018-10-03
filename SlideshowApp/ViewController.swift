@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let images = ["IMG_1457", "IMG_1460", "IMG_1462", "IMG_1463", "IMG_1464"]
+    let images = ["IMG_1457.jpg", "IMG_1460.jpg", "IMG_1462.jpg", "IMG_1463.jpg", "IMG_1464.jpg"]
     
     var image_index: Int = 0
     
