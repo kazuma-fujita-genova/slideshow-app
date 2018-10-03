@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,33 +15,47 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3T1-Qc-KxZ">
-                                <rect key="frame" x="280" y="691" width="30" height="30"/>
-                                <state key="normal" title="▶▶"/>
-                                <connections>
-                                    <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6E-RO-atj"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTc-al-eO2">
-                                <rect key="frame" x="172.66666666666666" y="694" width="30" height="24"/>
+                                <rect key="frame" x="145" y="438" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Ev9-9U-Uqc"/>
+                                    <constraint firstAttribute="height" constant="30" id="FVa-hf-4fg"/>
+                                </constraints>
                                 <state key="normal" title="▶"/>
                                 <connections>
                                     <action selector="playImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EkG-IR-hNI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZW-Qw-Oua">
-                                <rect key="frame" x="65" y="691" width="30" height="30"/>
+                                <rect key="frame" x="37" y="438" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KnA-ac-6wL"/>
+                                    <constraint firstAttribute="width" constant="30" id="flB-lH-FaB"/>
+                                </constraints>
                                 <state key="normal" title="◀◀"/>
                                 <connections>
                                     <action selector="prevImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SOo-9m-2DJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEg-RB-4Ui">
-                                <rect key="frame" x="41" y="257" width="292" height="269"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3T1-Qc-KxZ">
+                                <rect key="frame" x="253" y="438" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="dPs-od-fJx"/>
+                                    <constraint firstAttribute="height" constant="30" id="prh-z7-vhe"/>
+                                </constraints>
+                                <state key="normal" title="▶▶"/>
+                                <connections>
+                                    <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6E-RO-atj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEg-RB-4Ui">
+                                <rect key="frame" x="40" y="120" width="240" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="Zcz-cS-tHB"/>
+                                </constraints>
                                 <connections>
                                     <action selector="imageViewer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z2Q-kZ-mgI"/>
                                     <segue destination="sqI-XD-UiT" kind="show" id="Y74-pj-Gp2"/>
@@ -50,13 +64,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3T1-Qc-KxZ" secondAttribute="trailing" constant="65" id="82j-IK-cVz"/>
-                            <constraint firstItem="3T1-Qc-KxZ" firstAttribute="centerY" secondItem="eTc-al-eO2" secondAttribute="centerY" id="H6p-Qc-2JZ"/>
-                            <constraint firstItem="9ZW-Qw-Oua" firstAttribute="centerY" secondItem="eTc-al-eO2" secondAttribute="centerY" id="KUn-St-t9H"/>
-                            <constraint firstItem="eTc-al-eO2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="300" id="ODE-I1-PhR"/>
-                            <constraint firstItem="9ZW-Qw-Oua" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="Tpo-rG-Gp4"/>
-                            <constraint firstItem="eTc-al-eO2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bRe-sm-eyW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eTc-al-eO2" secondAttribute="bottom" constant="60" id="jTa-UC-yRd"/>
+                            <constraint firstItem="3T1-Qc-KxZ" firstAttribute="leading" secondItem="eTc-al-eO2" secondAttribute="trailing" constant="78" id="488-Tu-9xT"/>
+                            <constraint firstItem="eTc-al-eO2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CjD-9I-gTX"/>
+                            <constraint firstItem="eTc-al-eO2" firstAttribute="leading" secondItem="9ZW-Qw-Oua" secondAttribute="trailing" constant="78" id="K7X-RM-GeV"/>
+                            <constraint firstItem="iEg-RB-4Ui" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="QuX-Lm-kee"/>
+                            <constraint firstItem="eTc-al-eO2" firstAttribute="baseline" secondItem="9ZW-Qw-Oua" secondAttribute="baseline" id="V0n-Mh-4FX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eTc-al-eO2" secondAttribute="bottom" constant="100" id="a7x-L1-gTd"/>
+                            <constraint firstItem="eTc-al-eO2" firstAttribute="baseline" secondItem="3T1-Qc-KxZ" secondAttribute="baseline" id="gqZ-tq-9tQ"/>
+                            <constraint firstItem="eTc-al-eO2" firstAttribute="centerX" secondItem="iEg-RB-4Ui" secondAttribute="centerX" id="oc5-Y7-xVs"/>
+                            <constraint firstItem="iEg-RB-4Ui" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="sqd-jG-bpq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -76,15 +92,15 @@
             <objects>
                 <viewController id="sqI-XD-UiT" customClass="EnlargeViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sbF-od-e5z">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pEL-69-iGE">
-                                <rect key="frame" x="0.0" y="84" width="375" height="364"/>
+                                <rect key="frame" x="0.0" y="59" width="320" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRl-5o-01K">
-                                <rect key="frame" x="9" y="46" width="54" height="30"/>
+                                <rect key="frame" x="8" y="32" width="46" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
